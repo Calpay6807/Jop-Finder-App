@@ -1,0 +1,121 @@
+{
+  "jops": [
+    {
+      "id": 1,
+      "position": "frontend developer",
+      "company": "udemig",
+      "location": "izmir/bayraklı",
+      "status": "Devam ediyor",
+      "type": "tam zamanlı",
+      "date": "10/01/2023"
+    },
+    {
+      "id": 2,
+      "position": "Backend Developer",
+      "company": "Kodlama.io",
+      "location": "İstanbul/Üsküdar",
+      "status": "Mülakat",
+      "type": "Tam Zamanlı",
+      "date": "3/29/2023"
+    },
+    {
+      "id": 3,
+      "position": "UI/UX Designer",
+      "company": "Figma",
+      "location": "New York",
+      "status": "Devam Ediyor",
+      "type": "Uzaktan",
+      "date": "10/3/2023"
+    },
+    {
+      "id": 4,
+      "position": "Software Engineer",
+      "company": "Google",
+      "location": "New York",
+      "status": "Reddedildi",
+      "type": "Tam Zamanlı",
+      "date": "10/2/2020"
+    },
+    {
+      "id": 5,
+      "position": "Product Manager",
+      "company": "Amazon",
+      "location": "Seattle",
+      "status": "Mülakat",
+      "type": "Yarı Zamanlı",
+      "date": "3/10/2024"
+    },
+    {
+      "id": 6,
+      "position": "Data Scientist",
+      "company": "Microsoft",
+      "location": "Redmond",
+      "status": "Devam Ediyor",
+      "type": "Tam Zamanlı",
+      "date": "3/1/2024"
+    },
+    {
+      "id": 7,
+      "position": "Frontend Developer",
+      "company": "Udemig",
+      "location": "İzmir/Bayraklı",
+      "status": "Devam Ediyor",
+      "type": "Tam Zamanlı",
+      "date": "1/17/2021"
+    },
+    {
+      "id": 8,
+      "position": "Marketing Manager",
+      "company": "Coca Cola",
+      "location": "İstanbul/Levent",
+      "status": "Mülakat",
+      "type": "Tam Zamanlı",
+      "date": "9/12/2020"
+    },
+    {
+      "id": 9,
+      "position": "Software Tester",
+      "company": "IBM",
+      "location": "Ankara/Çankaya",
+      "status": "Devam Ediyor",
+      "type": "Yarı Zamanlı",
+      "date": "3/28/2023"
+    },
+    {
+      "id": 10,
+      "position": "Data Analyst",
+      "company": "Facebook",
+      "location": "Menlo Park",
+      "status": "Reddedildi",
+      "type": "Uzaktan",
+      "date": "3/28/2023"
+    },
+    {
+      "position": "React-Developer",
+      "company": "Canva",
+      "location": "Aksaray/Merkez",
+      "state": "Mülakat",
+      "type": "Uzaktan",
+      "id": "3da8724e-0798-4b35-8bfa-345e1269ea36",
+      "date": "02.08.2023"
+    },
+    {
+      "position": "front end",
+      "company": "alpay",
+      "location": "aksaray",
+      "state": "Mülakat",
+      "type": "Tam Zamanlı",
+      "id": "cac46f1c-c59e-4a69-933f-a873a8525778",
+      "date": "07.08.2023"
+    },
+    {
+      "position": "frontend",
+      "company": "alpay",
+      "location": "",
+      "state": "Mülakat",
+      "type": "Tam Zamanlı",
+      "id": "a61b3bac-f8a8-416c-8f0a-ae6e7b52aa7c",
+      "date": "07.08.2023"
+    }
+  ]
+}

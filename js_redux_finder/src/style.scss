@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #242424;
+  color: white;
+  font-size: 25px;
+  font-weight: 400;
+  min-height: 100vh;
+}
+/*Header Kısmı*/
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+
+  .title {
+    background-color: rgba(0, 128, 9, 0.309);
+    padding: 10px 20px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    text-decoration: none;
+    font-size: 40px;
+    color: white;
+  }
+  div a {
+    text-decoration: none;
+    margin: 20px;
+    color: white;
+    background-color: rgba(128, 0, 128, 0.39);
+    padding: 10px 20px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  .active {
+    background-color: rgba(128, 0, 128, 0.18);
+    transition: 500ms;
+    &:hover {
+      text-shadow: 4px 4px 10px rgba(255, 255, 255, 0.642);
+    }
+  }
+}
+/*İş Listeleme başlangıç*/
+.jop-count {
+  margin-left: 10px;
+  margin-top: 25px;
+}
+.list-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 50px;
+  padding: 50px;
+}
+
+.jop-card {
+  background-color: gray;
+  padding: 20px;
+  border-top-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  .head {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    margin-bottom: 20px;
+
+    .letter {
+      background-color: purple;
+      height: 60px;
+      width: 60px;
+      display: grid;
+      place-items: center;
+      border-radius: 10px;
+    }
+  }
+  .body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 30px;
+    .field {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      img {
+        width: 30px;
+      }
+    }
+    .status {
+      span {
+        padding: 10px 20px;
+        border-radius: 10px;
+      }
+      .Devam {
+        background-color: rgb(177, 177, 25);
+      }
+      .Reddedildi {
+        background-color: red;
+      }
+      .Mülakat {
+        background-color: green;
+      }
+    }
+  }
+}
+/*İş Listeleme Bitiş*/
+
+/*İş Ekleme*/
+.container {
+  box-shadow: 0px 22px 70px 4px rgba(128, 0, 128, 0.42);
+  max-width: 700px;
+  margin: 300px auto;
+  padding: 15px;
+}
+form {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: space-between;
+  align-items: end;
+
+  .field {
+    display: flex;
+    flex-direction: column;
+  }
+  .field input,
+  .field select {
+    padding: 5px 10px;
+    margin-top: 5px;
+    border-radius: 15px;
+  }
+
+  button {
+    padding: 10px;
+    width: 140px;
+    height: 40px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #242424;
+    color: white;
+    font-size: 20px;
+    border: none;
+    box-shadow: 0px 22px 70px 4px rgba(128, 28, 0, 0.503);
+  }
+}
+/*İş Ekleme bitiş*/
+
+/*Filtreleme Bölümü*/
+
+.filter-sec {
+  width: 800px;
+  margin: auto;
+  box-sizing: border-box;
+  padding: 25px;
+  box-shadow: 0px 22px 70px 4px rgba(128, 0, 128, 0.42);
+}
+/*Filtreleme Bölümü Bitiş*/
