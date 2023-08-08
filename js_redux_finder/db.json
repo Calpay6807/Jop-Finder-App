@@ -89,33 +89,6 @@
       "status": "Reddedildi",
       "type": "Uzaktan",
       "date": "3/28/2023"
-    },
-    {
-      "position": "React-Developer",
-      "company": "Canva",
-      "location": "Aksaray/Merkez",
-      "state": "Mülakat",
-      "type": "Uzaktan",
-      "id": "3da8724e-0798-4b35-8bfa-345e1269ea36",
-      "date": "02.08.2023"
-    },
-    {
-      "position": "front end",
-      "company": "alpay",
-      "location": "aksaray",
-      "state": "Mülakat",
-      "type": "Tam Zamanlı",
-      "id": "cac46f1c-c59e-4a69-933f-a873a8525778",
-      "date": "07.08.2023"
-    },
-    {
-      "position": "frontend",
-      "company": "alpay",
-      "location": "",
-      "state": "Mülakat",
-      "type": "Tam Zamanlı",
-      "id": "a61b3bac-f8a8-416c-8f0a-ae6e7b52aa7c",
-      "date": "07.08.2023"
     }
   ]
 }

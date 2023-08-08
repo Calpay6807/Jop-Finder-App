@@ -8,6 +8,7 @@ import Filter from "./components/filter";
 const JopList = () => {
   const dispatch = useDispatch();
   const state = useSelector((state) => state);
+  console.log(state?.filteredJops);
   useEffect(() => {
     axios
       .get("http://localhost:3030/jops", { timeout: 5000 })

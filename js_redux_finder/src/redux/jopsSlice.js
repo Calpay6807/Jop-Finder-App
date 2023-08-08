@@ -43,6 +43,51 @@ const JopsSlice = createSlice({
       );
       state.filteredJops = filterBytypes;
     },
+
+    sortJops: (state, action) => {
+      switch (action.payload) {
+        case "a-z":
+          state.filteredJops.sort((a, b) => {
+            if (a.company < b.company) return -1;
+            if (a.company > b.company) return +1;
+            return 0;
+          });
+          break;
+
+        case "z-a":
+          state.filteredJops.sort((a, b) => {
+            if (a.company < b.company) return +1;
+            if (a.company > b.company) return -1;
+            return 0;
+          });
+          break;
+
+        case "En Yeni":
+          /* eğer sıralama işlemleri yapılıyosa tarihlerle
+          ozaman birinden diğerini çikarmamız lazım
+          */
+          state.filteredJops.sort(
+            (a, b) => new Date(b.date) - new Date(a.date)
+          );
+          break;
+
+        case "En Eski":
+          state.filteredJops.sort(
+            (a, b) => new Date(a.date) - new Date(b.date)
+          );
+          break;
+
+        default:
+          break;
+      }
+
+      return state;
+    },
+
+    // filtreleri temizleme
+    clearFilter: (state) => {
+      state.filteredJops = state.jops;
+    },
   },
 });
 
@@ -52,6 +97,8 @@ export const {
   filterBySearc,
   filteredByStatus,
   filteredByType,
+  sortJops,
+  clearFilter,
 } = JopsSlice.actions;
 
 // jopsSlice ın bizim için oluşturduğu reducuru export edelim edelşm

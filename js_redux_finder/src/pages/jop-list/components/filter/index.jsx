@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import { sortOptions, type, statusOptions } from "../../../../constants";
 import {
   filterBySearc,
   filteredByStatus,
   filteredByType,
+  sortJops,
+  clearFilter,
 } from "/src/redux/jopsSlice.js";
 import { useDispatch } from "react-redux";
 const Filter = () => {
@@ -19,6 +21,10 @@ const Filter = () => {
 
   const handleType = (e) => {
     dispatch(filteredByType(e.target.value));
+  };
+
+  const handleSort = (e) => {
+    dispatch(sortJops(e.target.value));
   };
   return (
     <section className="filter-sec">
@@ -55,13 +61,15 @@ const Filter = () => {
         <div className="field">
           <label>Sırala</label>
 
-          <select>
+          <select onChange={handleSort}>
             {sortOptions.map((op, i) => (
               <option key={i}>{op}</option>
             ))}
           </select>
         </div>
-        <button>Temizle</button>
+        <button type="button" onClick={() => dispatch(clearFilter())}>
+          Temizle
+        </button>
       </form>
     </section>
   );
